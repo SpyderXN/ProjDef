@@ -1,0 +1,10 @@
+[gd_scene format=3 uid="uid://3kfbgq6ss34l"]
+
+[ext_resource type="Texture2D" uid="uid://dx7kbe56pxl0o" path="res://Assets/Everything/Bullet.png" id="1_2dao8"]
+[ext_resource type="Script" uid="uid://d1bjv7t1y2fsc" path="res://Bullet/bullet.gd" id="1_4qwpv"]
+
+[node name="Bullet" type="Area2D" unique_id=555615519]
+script = ExtResource("1_4qwpv")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=265581241]
+texture = ExtResource("1_2dao8")

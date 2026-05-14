@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://b7bmiyjj8tqy1"]
+
+[ext_resource type="Texture2D" uid="uid://vdexuo5gkaq6" path="res://Assets/Everything/Turret.png" id="1_5kpma"]
+[ext_resource type="PackedScene" uid="uid://bdwmmt43q1pep" path="res://Gun/gun.tscn" id="2_djkev"]
+
+[node name="Turret" type="Node2D" unique_id=800456305]
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=49706494]
+texture = ExtResource("1_5kpma")
+
+[node name="Gun" parent="." unique_id=63795013 instance=ExtResource("2_djkev")]

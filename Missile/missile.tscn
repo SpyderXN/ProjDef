@@ -3,9 +3,20 @@
 [ext_resource type="Texture2D" uid="uid://bosewklq6gxax" path="res://Assets/Everything/Missile.png" id="1_7j8p5"]
 [ext_resource type="Script" uid="uid://b53ygmd87o2af" path="res://Missile/missile.gd" id="1_iggwb"]
 
-[node name="Missile" type="Area2D" unique_id=1611107559]
+[sub_resource type="CapsuleShape2D" id="CapsuleShape2D_iggwb"]
+radius = 7.0
+height = 26.0
+
+[node name="Missile" type="Area2D" unique_id=1611107559 groups=["Missile"]]
+collision_layer = 2
+collision_mask = 5
 script = ExtResource("1_iggwb")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=493308649]
 rotation = 3.1415927
 texture = ExtResource("1_7j8p5")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=1919197664]
+shape = SubResource("CapsuleShape2D_iggwb")
+
+[connection signal="area_entered" from="." to="." method="_on_area_entered"]

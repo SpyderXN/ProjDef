@@ -1,0 +1,19 @@
+[gd_scene format=3 uid="uid://dl7gcj6yghk7r"]
+
+[node name="UI" type="CanvasLayer" unique_id=1315164004]
+
+[node name="EnergyBar" type="ProgressBar" parent="." unique_id=1490500889]
+offset_right = 484.0
+offset_bottom = 27.0
+rounded = true
+show_percentage = false
+
+[node name="CityDamageBar" type="ProgressBar" parent="." unique_id=1391722862]
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -484.0
+offset_bottom = 27.0
+grow_horizontal = 0
+rounded = true
+show_percentage = false

@@ -1,8 +1,17 @@
 [gd_scene format=3 uid="uid://cxlcn35yepvuf"]
 
 [ext_resource type="PackedScene" uid="uid://b7bmiyjj8tqy1" path="res://Turret/turret.tscn" id="1_yh5la"]
+[ext_resource type="PackedScene" uid="uid://blul3p3mdif7n" path="res://MissileSpawner/missile_spawner.tscn" id="2_2w1kt"]
+[ext_resource type="PackedScene" uid="uid://bu5iwc088fej3" path="res://Missile/missile.tscn" id="3_qvhan"]
 
 [node name="Main" type="Node2D" unique_id=1717431131]
 
 [node name="Turret" parent="." unique_id=800456305 instance=ExtResource("1_yh5la")]
-position = Vector2(546, 301)
+position = Vector2(939, 1013)
+
+[node name="MissileSpawner" parent="." unique_id=312162066 instance=ExtResource("2_2w1kt")]
+missile = Array[PackedScene]([ExtResource("3_qvhan")])
+high_range = 2000.0
+low_range = 100.0
+high_angle = 8.0
+low_angle = -15.0

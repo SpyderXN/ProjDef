@@ -1,0 +1,11 @@
+[gd_scene format=3 uid="uid://bu5iwc088fej3"]
+
+[ext_resource type="Texture2D" uid="uid://bosewklq6gxax" path="res://Assets/Everything/Missile.png" id="1_7j8p5"]
+[ext_resource type="Script" uid="uid://b53ygmd87o2af" path="res://Missile/missile.gd" id="1_iggwb"]
+
+[node name="Missile" type="Area2D" unique_id=1611107559]
+script = ExtResource("1_iggwb")
+
+[node name="Sprite2D" type="Sprite2D" parent="." unique_id=493308649]
+rotation = 3.1415927
+texture = ExtResource("1_7j8p5")

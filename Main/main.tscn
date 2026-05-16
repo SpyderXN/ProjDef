@@ -4,6 +4,7 @@
 [ext_resource type="PackedScene" uid="uid://blul3p3mdif7n" path="res://MissileSpawner/missile_spawner.tscn" id="2_2w1kt"]
 [ext_resource type="PackedScene" uid="uid://bu5iwc088fej3" path="res://Missile/missile.tscn" id="3_qvhan"]
 [ext_resource type="PackedScene" uid="uid://dl7gcj6yghk7r" path="res://UI/ui.tscn" id="4_eunhr"]
+[ext_resource type="PackedScene" uid="uid://dmrxykutlwm1k" path="res://City/city.tscn" id="5_k3v36"]
 
 [node name="Main" type="Node2D" unique_id=1717431131]
 
@@ -18,3 +19,6 @@ high_angle = 8.0
 low_angle = -15.0
 
 [node name="UI" parent="." unique_id=1315164004 instance=ExtResource("4_eunhr")]
+
+[node name="City" parent="." unique_id=997283177 instance=ExtResource("5_k3v36")]
+position = Vector2(963, 1077)

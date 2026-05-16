@@ -15,6 +15,10 @@ run/main_scene="uid://cxlcn35yepvuf"
 config/features=PackedStringArray("4.6", "Forward Plus")
 config/icon="res://icon.svg"
 
+[autoload]
+
+Global="*uid://dqrqdo7bhmbb2"
+
 [display]
 
 window/size/viewport_width=1920
@@ -26,6 +30,7 @@ window/stretch/aspect="expand"
 
 Bullet=""
 Missile=""
+City=""
 
 [input_devices]
 

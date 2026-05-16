@@ -1,19 +1,52 @@
 [gd_scene format=3 uid="uid://dl7gcj6yghk7r"]
 
+[ext_resource type="Script" uid="uid://b1bhl0dd641j6" path="res://UI/ui.gd" id="1_2fwl4"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_msqxa"]
+font_size = 32
+
+[sub_resource type="LabelSettings" id="LabelSettings_2fwl4"]
+font_size = 32
+
 [node name="UI" type="CanvasLayer" unique_id=1315164004]
+script = ExtResource("1_2fwl4")
 
 [node name="EnergyBar" type="ProgressBar" parent="." unique_id=1490500889]
+offset_top = 64.0
 offset_right = 484.0
-offset_bottom = 27.0
+offset_bottom = 91.0
 rounded = true
 show_percentage = false
+
+[node name="Label" type="Label" parent="EnergyBar" unique_id=1068627899]
+layout_mode = 0
+offset_left = 160.0
+offset_top = -50.0
+offset_right = 327.0
+offset_bottom = -5.0
+text = "Energy Bar"
+label_settings = SubResource("LabelSettings_msqxa")
 
 [node name="CityDamageBar" type="ProgressBar" parent="." unique_id=1391722862]
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
 offset_left = -484.0
-offset_bottom = 27.0
+offset_top = 64.0
+offset_bottom = 91.0
 grow_horizontal = 0
 rounded = true
 show_percentage = false
+
+[node name="Label" type="Label" parent="CityDamageBar" unique_id=1599544026]
+layout_mode = 0
+offset_left = 160.0
+offset_top = -50.0
+offset_right = 355.0
+offset_bottom = -5.0
+text = "City Damage"
+label_settings = SubResource("LabelSettings_2fwl4")
+
+[node name="EnergyTimer" type="Timer" parent="." unique_id=909702568]
+
+[connection signal="timeout" from="EnergyTimer" to="." method="_on_energy_timer_timeout"]

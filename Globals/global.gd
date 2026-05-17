@@ -29,3 +29,8 @@ func _reload_energy(value):
 func _city_damage(value):
 	var damage = city_health - value
 	city_health = damage
+
+func _reset():
+	energy_value = 100
+	max_energy = 100
+	city_health = 100

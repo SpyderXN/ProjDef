@@ -80,5 +80,9 @@ horizontal_alignment = 1
 layout_mode = 2
 text = "PLAY AGAIN"
 
+[node name="UiHideTimer" type="Timer" parent="." unique_id=2066335680]
+wait_time = 10.0
+
 [connection signal="timeout" from="EnergyTimer" to="." method="_on_energy_timer_timeout"]
 [connection signal="pressed" from="GameOver/VBoxContainer/Button" to="." method="_on_button_pressed"]
+[connection signal="timeout" from="UiHideTimer" to="." method="_on_ui_hide_timer_timeout"]

@@ -1,0 +1,78 @@
+[gd_scene format=3 uid="uid://cg0ohjxla7ybq"]
+
+[ext_resource type="Script" uid="uid://bu57nrrl27onf" path="res://Menu/menu.gd" id="1_rwxi6"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_j7vem"]
+font_size = 82
+
+[sub_resource type="LabelSettings" id="LabelSettings_rwxi6"]
+font_size = 32
+
+[node name="Menu" type="Node2D" unique_id=12596118]
+script = ExtResource("1_rwxi6")
+
+[node name="UI" type="CanvasLayer" parent="." unique_id=1556715851]
+
+[node name="Label" type="Label" parent="UI" unique_id=203431831]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -283.5
+offset_right = 20.0
+offset_bottom = -260.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Project Defender"
+label_settings = SubResource("LabelSettings_j7vem")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Button" type="Button" parent="UI" unique_id=298538023]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -4.0
+offset_top = -4.0
+offset_right = 4.0
+offset_bottom = 4.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 64
+text = "START"
+
+[node name="Button2" type="Button" parent="UI" unique_id=1636415237]
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -99.5
+offset_top = 88.0
+offset_right = 99.5
+offset_bottom = 184.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_font_sizes/font_size = 64
+text = "EXIT"
+
+[node name="Label2" type="Label" parent="UI" unique_id=487072178]
+anchors_preset = 2
+anchor_top = 1.0
+anchor_bottom = 1.0
+offset_left = 56.0
+offset_top = -93.0
+offset_right = 235.0
+offset_bottom = -48.0
+grow_vertical = 0
+text = "Version: 0.1"
+label_settings = SubResource("LabelSettings_rwxi6")
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="UI/Button" to="." method="_on_button_pressed"]
+[connection signal="pressed" from="UI/Button2" to="." method="_on_button_2_pressed"]

@@ -1,18 +1,18 @@
 [gd_scene format=3 uid="uid://bdwmmt43q1pep"]
 
-[ext_resource type="Texture2D" uid="uid://bc1l6vd85ka7u" path="res://Assets/Everything/Barrel.png" id="1_n3g7m"]
 [ext_resource type="Script" uid="uid://c2qebht68xku3" path="res://Gun/gun.gd" id="1_yf33g"]
+[ext_resource type="Texture2D" uid="uid://cj7ji53ogx87y" path="res://Assets/ProjDef/Gun_2.png" id="2_yf33g"]
 
 [node name="Gun" type="Node2D" unique_id=63795013]
 script = ExtResource("1_yf33g")
 
 [node name="Sprite2D" type="Sprite2D" parent="." unique_id=767646759]
-position = Vector2(32, 0)
+position = Vector2(12, 0)
 rotation = 1.5707964
-texture = ExtResource("1_n3g7m")
+texture = ExtResource("2_yf33g")
 
 [node name="Marker2D" type="Marker2D" parent="." unique_id=1322817928]
-position = Vector2(52, 0)
+position = Vector2(40, 0)
 
 [node name="Timer" type="Timer" parent="." unique_id=47254242]
 wait_time = 0.2

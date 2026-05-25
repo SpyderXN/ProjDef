@@ -1,8 +1,8 @@
 extends CanvasLayer
 
-@onready var energy_bar: ProgressBar = $EnergyBar
+@onready var energy_bar: TextureProgressBar = $EnergyBar
 @onready var energy_timer: Timer = $EnergyTimer
-@onready var city_damage_bar: ProgressBar = $CityDamageBar
+@onready var city_damage_bar: TextureProgressBar = $CityDamageBar
 @onready var ui_hide_timer: Timer = $UiHideTimer
 @onready var game_over: PanelContainer = $GameOver
 

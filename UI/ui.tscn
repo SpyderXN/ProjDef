@@ -1,6 +1,9 @@
 [gd_scene format=3 uid="uid://dl7gcj6yghk7r"]
 
 [ext_resource type="Script" uid="uid://b1bhl0dd641j6" path="res://UI/ui.gd" id="1_2fwl4"]
+[ext_resource type="Texture2D" uid="uid://w2gchoouqy1v" path="res://Assets/ProjDef/outside_64x8.png" id="2_e6gg6"]
+[ext_resource type="Texture2D" uid="uid://68qev2a31qt4" path="res://Assets/ProjDef/under_64x8.png" id="2_hat8c"]
+[ext_resource type="Texture2D" uid="uid://dsut6hvu5pnpu" path="res://Assets/ProjDef/progress_64x8.png" id="3_hat8c"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_msqxa"]
 font_size = 32
@@ -14,39 +17,45 @@ font_size = 32
 [node name="UI" type="CanvasLayer" unique_id=1315164004]
 script = ExtResource("1_2fwl4")
 
-[node name="EnergyBar" type="ProgressBar" parent="." unique_id=1490500889]
-offset_top = 64.0
-offset_right = 484.0
-offset_bottom = 91.0
+[node name="EnergyBar" type="TextureProgressBar" parent="." unique_id=1952590846]
+offset_left = 88.0
+offset_top = 80.0
+offset_right = 152.0
+offset_bottom = 88.0
+scale = Vector2(6, 6)
 rounded = true
-show_percentage = false
+texture_under = ExtResource("2_hat8c")
+texture_over = ExtResource("2_e6gg6")
+texture_progress = ExtResource("3_hat8c")
 
-[node name="Label" type="Label" parent="EnergyBar" unique_id=1068627899]
-layout_mode = 0
-offset_left = 160.0
-offset_top = -50.0
-offset_right = 327.0
-offset_bottom = -5.0
+[node name="EnergyBarLabel" type="Label" parent="." unique_id=1068627899]
+offset_left = 189.0
+offset_top = 32.0
+offset_right = 356.0
+offset_bottom = 77.0
 text = "Energy Bar"
 label_settings = SubResource("LabelSettings_msqxa")
 
-[node name="CityDamageBar" type="ProgressBar" parent="." unique_id=1391722862]
+[node name="CityDamageBar" type="TextureProgressBar" parent="." unique_id=380518577]
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
 offset_left = -484.0
-offset_top = 64.0
-offset_bottom = 91.0
+offset_top = 96.0
+offset_right = -420.0
+offset_bottom = 104.0
 grow_horizontal = 0
+scale = Vector2(6, 6)
 rounded = true
-show_percentage = false
+texture_under = ExtResource("2_hat8c")
+texture_over = ExtResource("2_e6gg6")
+texture_progress = ExtResource("3_hat8c")
 
-[node name="Label" type="Label" parent="CityDamageBar" unique_id=1599544026]
-layout_mode = 0
-offset_left = 160.0
-offset_top = -50.0
-offset_right = 355.0
-offset_bottom = -5.0
+[node name="CityDamageBarLabel" type="Label" parent="." unique_id=1599544026]
+offset_left = 1532.0
+offset_top = 46.0
+offset_right = 1727.0
+offset_bottom = 91.0
 text = "City Damage"
 label_settings = SubResource("LabelSettings_2fwl4")
 

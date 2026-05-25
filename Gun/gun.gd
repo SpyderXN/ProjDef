@@ -59,7 +59,7 @@ func fire():
 	var bullet_scene = BULLET.instantiate()
 	get_tree().root.add_child(bullet_scene)
 	bullet_scene.global_position = marker_2d.global_position
-	bullet_scene.global_rotation = marker_2d.global_rotation
+	bullet_scene.global_rotation = rotation
 
 
 func _on_timer_timeout() -> void:

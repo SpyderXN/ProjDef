@@ -1,0 +1,17 @@
+[gd_resource type="TileSet" format=3 uid="uid://20nejplia0y"]
+
+[ext_resource type="Texture2D" uid="uid://ducg1i6xr17b1" path="res://Assets/ProjDef/Temp_background.png" id="1_qcdws"]
+
+[sub_resource type="TileMapPattern" id="TileMapPattern_qcdws"]
+tile_data = PackedInt32Array(0, 0, 0, 65536, 65536, 805306368, 1, 65536, 0, 65537, 0, 805306368)
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1hi1v"]
+texture = ExtResource("1_qcdws")
+texture_region_size = Vector2i(64, 64)
+0:0/0 = 0
+1:0/0 = 0
+
+[resource]
+tile_size = Vector2i(64, 64)
+sources/0 = SubResource("TileSetAtlasSource_1hi1v")
+pattern_0 = SubResource("TileMapPattern_qcdws")

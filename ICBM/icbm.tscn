@@ -1,0 +1,17 @@
+[gd_scene format=3 uid="uid://dp0nmnfi138hs"]
+
+[ext_resource type="PackedScene" uid="uid://bu5iwc088fej3" path="res://Missile/missile.tscn" id="1_c1c15"]
+[ext_resource type="Texture2D" uid="uid://6518imxfaxjw" path="res://Assets/ProjDef/Missile_1.png" id="2_0d4t6"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_0d4t6"]
+size = Vector2(6, 60)
+
+[node name="ICBM" unique_id=1611107559 instance=ExtResource("1_c1c15")]
+speed = 100
+
+[node name="Sprite2D" parent="." index="0" unique_id=493308649]
+rotation = 6.2831855
+texture = ExtResource("2_0d4t6")
+
+[node name="CollisionShape2D" parent="." index="1" unique_id=1919197664]
+shape = SubResource("RectangleShape2D_0d4t6")

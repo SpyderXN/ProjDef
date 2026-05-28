@@ -40,9 +40,9 @@ label_settings = SubResource("LabelSettings_msqxa")
 anchors_preset = 1
 anchor_left = 1.0
 anchor_right = 1.0
-offset_left = -484.0
+offset_left = -532.0
 offset_top = 96.0
-offset_right = -420.0
+offset_right = -468.0
 offset_bottom = 104.0
 grow_horizontal = 0
 scale = Vector2(6, 6)
@@ -52,10 +52,14 @@ texture_over = ExtResource("2_e6gg6")
 texture_progress = ExtResource("3_hat8c")
 
 [node name="CityDamageBarLabel" type="Label" parent="." unique_id=1599544026]
-offset_left = 1532.0
-offset_top = 46.0
-offset_right = 1727.0
-offset_bottom = 91.0
+anchors_preset = 1
+anchor_left = 1.0
+anchor_right = 1.0
+offset_left = -429.0
+offset_top = 47.0
+offset_right = -234.0
+offset_bottom = 92.0
+grow_horizontal = 0
 text = "City Damage"
 label_settings = SubResource("LabelSettings_2fwl4")
 

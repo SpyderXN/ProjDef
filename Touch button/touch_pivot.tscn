@@ -1,0 +1,20 @@
+[gd_scene format=3 uid="uid://3gx32vm4pbew"]
+
+[ext_resource type="Script" uid="uid://d32y3i1yuputm" path="res://Touch button/touch_pivot.gd" id="1_w4u3j"]
+
+[sub_resource type="CompressedTexture2D" id="CompressedTexture2D_rwxi6"]
+load_path = "res://.godot/imported/Button.png-8c8536652e87c0026cd37c924d529f7e.ctex"
+
+[node name="TouchPivot" type="Node2D" unique_id=1890530041]
+scale = Vector2(3.765625, 1.28125)
+script = ExtResource("1_w4u3j")
+
+[node name="Touchstart" type="TouchScreenButton" parent="." unique_id=626304007]
+position = Vector2(-30.80497, -31.21949)
+scale = Vector2(0.99999994, 0.99999994)
+texture_normal = SubResource("CompressedTexture2D_rwxi6")
+action = "start_pressed"
+visibility_mode = 1
+
+[connection signal="pressed" from="Touchstart" to="." method="_on_touchstart_pressed"]
+[connection signal="released" from="Touchstart" to="." method="_on_touchstart_released"]

@@ -1,6 +1,8 @@
 [gd_scene format=3 uid="uid://cg0ohjxla7ybq"]
 
 [ext_resource type="Script" uid="uid://bu57nrrl27onf" path="res://Menu/menu.gd" id="1_rwxi6"]
+[ext_resource type="PackedScene" uid="uid://3gx32vm4pbew" path="res://Touch button/touch_pivot.tscn" id="2_ihied"]
+[ext_resource type="PackedScene" uid="uid://b7ou60orwj7tp" path="res://Exit button/exit.tscn" id="3_raj00"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_j7vem"]
 font_size = 82
@@ -10,6 +12,12 @@ font_size = 32
 
 [node name="Menu" type="Node2D" unique_id=12596118]
 script = ExtResource("1_rwxi6")
+
+[node name="TouchPivot" parent="." unique_id=1890530041 instance=ExtResource("2_ihied")]
+position = Vector2(449.99997, 486.99997)
+
+[node name="Exit" parent="." unique_id=1610875124 instance=ExtResource("3_raj00")]
+position = Vector2(1309.9999, 492.99997)
 
 [node name="UI" type="CanvasLayer" parent="." unique_id=1556715851]
 
@@ -74,5 +82,11 @@ label_settings = SubResource("LabelSettings_rwxi6")
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="TextureButton" type="TextureButton" parent="UI" unique_id=1410699267]
+offset_right = 40.0
+offset_bottom = 40.0
+
+[connection signal="mouse_entered" from="UI/Button" to="." method="_on_button_mouse_entered"]
+[connection signal="mouse_exited" from="UI/Button" to="." method="_on_button_mouse_exited"]
 [connection signal="pressed" from="UI/Button" to="." method="_on_button_pressed"]
 [connection signal="pressed" from="UI/Button2" to="." method="_on_button_2_pressed"]
